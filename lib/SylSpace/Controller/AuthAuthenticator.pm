@@ -143,7 +143,7 @@ __DATA__
 
 
 
-     <% if ($ENV{'SYLSPACE_onlocalhost'}) { %>
+     <% if (1 or $ENV{'SYLSPACE_onlocalhost'}) { %>
         <div class="top-buffer text-center; border-style:solid;"> <!-- completely ignored afaik -->
            <%== btnblock('/auth/testsetuser', '<i class="fa fa-users"></i> Choose Existing Listed User', '(works only on localhost, usually syllabus.test)', 'btn-warning btn-md', 'w') %>
         </div>
